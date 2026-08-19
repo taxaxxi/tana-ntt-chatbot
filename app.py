@@ -1,4 +1,3 @@
-﻿```python
 # ==================== app.py - Tana NTT Chatbot ====================
 # 
 # Chatbot untuk melestarikan pengetahuan pertanian leluhur NTT
@@ -34,8 +33,8 @@ st.markdown("---")
 # ==================================================================
 # 2. AMBIL API KEY GROQ
 # ==================================================================
-# Untuk deployment di Streamlit Cloud: gunakan st.secrets
-# Untuk testing lokal: gunakan os.getenv()
+# API Key diambil dari Streamlit Secrets (untuk deployment)
+# atau dari environment variable (untuk lokal)
 try:
     groq_api_key = st.secrets["GROQ_API_KEY"]
 except:
@@ -228,4 +227,3 @@ if prompt := st.chat_input("Tanyakan tentang kearifan pertanian NTT..."):
 # ==================================================================
 st.markdown("---")
 st.caption("🌾 Tana NTT - Melestarikan Pengetahuan Pertanian Leluhur NTT")
-```
