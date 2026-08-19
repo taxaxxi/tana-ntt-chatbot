@@ -118,7 +118,7 @@ def load_rag_chain(pdf_file=None):
         llm = ChatGroq(
             model="openai/gpt-oss-120b",
             temperature=0.7,
-            max_tokens=512,
+            max_tokens=2048,
             api_key=groq_api_key
         )
 
